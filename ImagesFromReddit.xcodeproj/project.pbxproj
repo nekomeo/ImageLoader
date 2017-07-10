@@ -13,6 +13,10 @@
 		6AD34A711F11965300D4EE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD34A6F1F11965300D4EE54 /* Main.storyboard */; };
 		6AD34A731F11965300D4EE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD34A721F11965300D4EE54 /* Assets.xcassets */; };
 		6AD34A761F11965300D4EE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD34A741F11965300D4EE54 /* LaunchScreen.storyboard */; };
+		6AD34A7F1F1197AA00D4EE54 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A7E1F1197AA00D4EE54 /* Photo.m */; };
+		6AD34A821F119AC300D4EE54 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A811F119AC300D4EE54 /* PhotoTableViewCell.m */; };
+		6AD34A851F11A30800D4EE54 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A841F11A30800D4EE54 /* DetailViewController.m */; };
+		6AD34A881F12CC4D00D4EE54 /* PhotoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A871F12CC4D00D4EE54 /* PhotoList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		6AD34A721F11965300D4EE54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD34A751F11965300D4EE54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AD34A771F11965300D4EE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD34A7D1F1197AA00D4EE54 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		6AD34A7E1F1197AA00D4EE54 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		6AD34A801F119AC300D4EE54 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		6AD34A811F119AC300D4EE54 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
+		6AD34A831F11A30800D4EE54 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6AD34A841F11A30800D4EE54 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6AD34A861F12CC4D00D4EE54 /* PhotoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoList.h; path = ../PhotoList.h; sourceTree = "<group>"; };
+		6AD34A871F12CC4D00D4EE54 /* PhotoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoList.m; path = ../PhotoList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +74,15 @@
 				6AD34A6A1F11965300D4EE54 /* AppDelegate.m */,
 				6AD34A6C1F11965300D4EE54 /* ViewController.h */,
 				6AD34A6D1F11965300D4EE54 /* ViewController.m */,
+				6AD34A7D1F1197AA00D4EE54 /* Photo.h */,
+				6AD34A7E1F1197AA00D4EE54 /* Photo.m */,
 				6AD34A6F1F11965300D4EE54 /* Main.storyboard */,
+				6AD34A801F119AC300D4EE54 /* PhotoTableViewCell.h */,
+				6AD34A811F119AC300D4EE54 /* PhotoTableViewCell.m */,
+				6AD34A831F11A30800D4EE54 /* DetailViewController.h */,
+				6AD34A841F11A30800D4EE54 /* DetailViewController.m */,
+				6AD34A861F12CC4D00D4EE54 /* PhotoList.h */,
+				6AD34A871F12CC4D00D4EE54 /* PhotoList.m */,
 				6AD34A721F11965300D4EE54 /* Assets.xcassets */,
 				6AD34A741F11965300D4EE54 /* LaunchScreen.storyboard */,
 				6AD34A771F11965300D4EE54 /* Info.plist */,
@@ -150,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD34A821F119AC300D4EE54 /* PhotoTableViewCell.m in Sources */,
+				6AD34A7F1F1197AA00D4EE54 /* Photo.m in Sources */,
+				6AD34A881F12CC4D00D4EE54 /* PhotoList.m in Sources */,
 				6AD34A6E1F11965300D4EE54 /* ViewController.m in Sources */,
 				6AD34A6B1F11965300D4EE54 /* AppDelegate.m in Sources */,
 				6AD34A681F11965300D4EE54 /* main.m in Sources */,
+				6AD34A851F11A30800D4EE54 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
