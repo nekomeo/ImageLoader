@@ -11,6 +11,7 @@
 #import "PhotoTableViewCell.h"
 #import "DetailViewController.h"
 #import "PhotoList.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ViewController ()
 
@@ -31,13 +32,15 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    // Create a URL object containing the reddit url you wish to pull data from
+    // Create a URL object (in this case subreddit) containing the reddit url you wish to pull data from
     NSURL *url = [NSURL URLWithString:@"https://www.reddit.com/r/aww/.json"];
+    
     // Create a NSURLReuqest object and set the URL you wish to connect to
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:url];
     
     // This is the settings for the session
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
     // This is setting up the session object
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     

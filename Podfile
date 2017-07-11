@@ -9,5 +9,6 @@ target 'ImagesFromReddit' do
 
     pod 'SDWebImage', '~> 4.0'
     pod 'FLAnimatedImage', '~> 1.0'
+    pod 'SDWebImage/GIF'
 
 end

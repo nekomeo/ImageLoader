@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Photo.h"
 #import "PhotoList.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 
 @interface DetailViewController : UIViewController

@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *detailImageView;
@@ -24,6 +25,7 @@
     [self configureView];
     
     self.pinchedImage = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(scaleImageView:)];
+    
     [self.detailImageView addGestureRecognizer:self.pinchedImage];
     
     self.tapImage = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDifferentImage:)];
@@ -41,7 +43,10 @@
     
     Photo *redditPhoto = self.redditPhotos.photos[self.redditPhotos.currentIndexNum];
     
-    self.detailImageView.image = redditPhoto.image;
+    //    self.detailImageView.image = redditPhoto.image;
+    
+    [self.detailImageView sd_setImageWithURL:redditPhoto.imageURL placeholderImage:redditPhoto.thumbnail]; // Calls the third party library
+    
     self.detailImageView.userInteractionEnabled = TRUE; // Responds to gestures
     
     self.detailTitleLabel.text = redditPhoto.title;
