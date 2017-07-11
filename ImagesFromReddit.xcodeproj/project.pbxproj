@@ -17,6 +17,7 @@
 		6AD34A821F119AC300D4EE54 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A811F119AC300D4EE54 /* PhotoTableViewCell.m */; };
 		6AD34A851F11A30800D4EE54 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A841F11A30800D4EE54 /* DetailViewController.m */; };
 		6AD34A881F12CC4D00D4EE54 /* PhotoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD34A871F12CC4D00D4EE54 /* PhotoList.m */; };
+		C43C534EEB38C715F7DC86BE /* libPods-ImagesFromReddit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF41E74D56C238E5541B0D8 /* libPods-ImagesFromReddit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,9 @@
 		6AD34A841F11A30800D4EE54 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6AD34A861F12CC4D00D4EE54 /* PhotoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoList.h; path = ../PhotoList.h; sourceTree = "<group>"; };
 		6AD34A871F12CC4D00D4EE54 /* PhotoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoList.m; path = ../PhotoList.m; sourceTree = "<group>"; };
+		7FF41E74D56C238E5541B0D8 /* libPods-ImagesFromReddit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImagesFromReddit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF08F79571686E5DE46C678D /* Pods-ImagesFromReddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagesFromReddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagesFromReddit/Pods-ImagesFromReddit.release.xcconfig"; sourceTree = "<group>"; };
+		FF8E7F901D94B9A4B9ACA369 /* Pods-ImagesFromReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagesFromReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagesFromReddit/Pods-ImagesFromReddit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43C534EEB38C715F7DC86BE /* libPods-ImagesFromReddit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1674565DC6F1CC33E7B2944F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E7F901D94B9A4B9ACA369 /* Pods-ImagesFromReddit.debug.xcconfig */,
+				BF08F79571686E5DE46C678D /* Pods-ImagesFromReddit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6AD34A5A1F11965300D4EE54 = {
 			isa = PBXGroup;
 			children = (
 				6AD34A651F11965300D4EE54 /* ImagesFromReddit */,
 				6AD34A641F11965300D4EE54 /* Products */,
+				1674565DC6F1CC33E7B2944F /* Pods */,
+				E32E5B15258A0C0034D58298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +115,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E32E5B15258A0C0034D58298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF41E74D56C238E5541B0D8 /* libPods-ImagesFromReddit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AD34A7A1F11965300D4EE54 /* Build configuration list for PBXNativeTarget "ImagesFromReddit" */;
 			buildPhases = (
+				265EBBD5CAF6A005A74FA718 /* [CP] Check Pods Manifest.lock */,
 				6AD34A5F1F11965300D4EE54 /* Sources */,
 				6AD34A601F11965300D4EE54 /* Frameworks */,
 				6AD34A611F11965300D4EE54 /* Resources */,
+				D48301BC9DB29BE2ADCDF71E /* [CP] Embed Pods Frameworks */,
+				0727F6161F59792EE0F99129 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +191,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0727F6161F59792EE0F99129 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImagesFromReddit/Pods-ImagesFromReddit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		265EBBD5CAF6A005A74FA718 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D48301BC9DB29BE2ADCDF71E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImagesFromReddit/Pods-ImagesFromReddit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AD34A5F1F11965300D4EE54 /* Sources */ = {
@@ -294,6 +369,7 @@
 		};
 		6AD34A7B1F11965300D4EE54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8E7F901D94B9A4B9ACA369 /* Pods-ImagesFromReddit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImagesFromReddit/Info.plist;
@@ -305,6 +381,7 @@
 		};
 		6AD34A7C1F11965300D4EE54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF08F79571686E5DE46C678D /* Pods-ImagesFromReddit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImagesFromReddit/Info.plist;
